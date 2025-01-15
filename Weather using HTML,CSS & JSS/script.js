@@ -31,6 +31,7 @@ async function WeatherData(city){
     document.querySelector(".wind > .attributes > .row > .cloudiness").innerHTML = `${data.clouds.all} %`;
     document.querySelector(".temp > .attributes > .row > .Pressure").innerHTML = `${data.main.pressure} Bar`;
     document.querySelector(".temp > .attributes > .row > .Humidity").innerHTML = `${data.main.humidity} %`;
+    document.querySelector("#tempValue").innerHTML = `${data.main.temp} °C`;
 }
 
 searchBtn.addEventListener("click", ()=>{
